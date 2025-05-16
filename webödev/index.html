@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<link rel="stylesheet" href="style.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Süleyman Tekik Web</title>
+
+</head>
+
+<body>
+    <section id="login">
+        <h2>Login</h2>
+        <form action="login.php" method="post">
+            <label for="username">Kullanıcı Adı:</label><br>
+            <input type="text" id="username" name="username" required><br><br>
+            <label for="password">Şifre:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+            <button type="submit">Giriş Yap</button>
+        </form>
+    </section>
+    <header>
+        <h1>Süleyman Tekik</h1>
+    </header>
+
+    <nav>
+        <a href="#hakkimda" onclick="showSection('hakkimda')">Hakkımda</a>
+        <a href="#egitim" onclick="showSection('egitim')">Eğitim Bilgileri</a>
+        <a href="#sehrim" onclick="showSection('sehrim')">Şehrim</a>
+        <a href="#mirasimiz" onclick="showSection('mirasimiz')">Mirasımız</a>
+    </nav>
+
+    <section id="hakkimda">
+        <h2>Hakkımda</h2>
+        <p>Ben Süleyman Tekik. Afyonkarahisar'da doğdum. 2002 doğumluyum. Hobilerim arasında futbol oynamak, bilgisayar
+            oyunu oynamak, basketbol oynamak, dizi izlemek, arkadaşlarımla vakit geçirmek ve ailemle vakit geçirmek yer
+            alır.</p>
+    </section>
+
+    <section id="egitim">
+        <h2>Eğitim Bilgileri</h2>
+        <p>İlkokulu Ayşegül Ersoy İlköğretim okulunda okudum.Ortaokulda Maraşal Fevzi Çakmak Ortaokuluna geçiş
+            yaptım.Teog sınavından 480 puan alarak Ali Çağlar Anadolu Lisesi'ni kazandım.Yks sınavında 38134. olarak
+            Sakarya Üniversitesi bilgisayar mühendisliği bölümünü kazandım.</p>
+    </section>
+    <div class="box">
+        <section id="mirasimiz">
+
+            <h2 class="miras">Mirasımız</h2>
+            <p class="parag1">Afyonkarahisar, zengin tarihi ve kültürel mirasıyla ön plana çıkan bir şehirdir. Bu miras,
+                binlerce
+                yıllık geçmişi boyunca çeşitli medeniyetlerin izlerini taşır. Şehrin tarihi yapıları, yöresel kültürü ve
+                eşsiz doğal güzellikleri, Afyonkarahisar'ı benzersiz kılar.</p>
+            <p class="parag2">Şehrimizin mirasını keşfetmek için tarihi kaleleri, müzeleri, anıtları ve doğal alanları
+                ziyaret
+                edebilirsiniz. Ayrıca yöresel lezzetleri tatmak ve geleneksel el sanatlarını görmek de mirasımızı
+                deneyimlemenin bir
+                yoludur.</p>
+
+
+        </section>
+        <footer>
+            <p>&copy; 2024 Süleyman Tekik</p>
+        </footer>
+    </div>
+
+    <section id="sehrim">
+        <h2>Şehrim</h2>
+        <div class="slider-container">
+            <div class="slider-content">
+                <div class="slide">
+                    <a
+                        href="https://www.kulturportali.gov.tr/turkiye/afyonkarahisar/gezilecekyer/afyonkarahisar-kalesi">
+                        <img src="./resimler/kale.webp" alt="Afyonkarahisar Kalesi">
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="https://tr.wikipedia.org/wiki/Afyonkarahisar_M%C3%BCzesi">
+                        <img src="./resimler/Afyonkarahisar_Müzesi_04.jpg" alt="Afyonkarahisar Müzesi">
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="https://www.kulturportali.gov.tr/turkiye/afyonkarahisar/gezilecekyer/zafer--utku-aniti">
+                        <img src="./resimler/20200213171812576_sayfa   49  IMG_4181.jpg" alt="Zafer Anıtı">
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="http://afyonkarahisar.gov.tr/frig-vadisi">
+                        <img src="./resimler/esentour-frig-vadisi-eskisehir-turu-3-547.jpg" alt="Frig Vadisi">
+                    </a>
+                </div>
+            </div>
+            <div class="slide-nav">
+                <button class="p1" onclick="goToSlide(0)">Afyonkarahisar Kalesi</button>
+                <button class="p2" onclick="goToSlide(1)">Afyonkarahisar Müzesi</button>
+                <button class="p3" onclick="goToSlide(2)">Zafer Anıtı</button>
+                <button class="p4" onclick="goToSlide(3)">Frig Vadisi</button>
+            </div>
+        </div>
+
+        <div>
+            <h3>Afyonkarahisar</h3>
+            <p>Afyonkarahisar, Türkiye'nin Ege Bölgesi'nde İç Batı Anadolu Bölümü'nde yer alan bir ildir. 2010 TUIK
+                verilerine göre ilimizde merkez ilçe ile beraber 18 ilçe, 89 belde ve 388 köy vardır.</p>
+            <p>Tarihçe: Bilindiği kadarıyla ilk olarak Hitit egemenliğinde olan Afyonkarahisar toprakları, sonra sırası
+                ile Frigya ve Lidya egemenliğine geçti.Daha sonra M.Ö. 16 yüzyılda Pers egemenliğine giren
+                Afyonkarahisar'ı Büyük İskender fethetti. Onun ölümünden sonra Selevkos ve Bergama Krallıkları'nın
+                egemenliğine giren topraklar, daha sonra Roma İmparatorluğu topraklarına katıldı.Alparslanın Malazgirt
+                Savaşı'ndan sonra Türklerin anadoluyu fethiyle Sultan I. Mesut'un emri ile Akronium Kalesi'nin
+                eteklerine Karaşar Türkleri yerleşmiş ve daha sonra kaleye Karahisar adı verilmiştir. Karahisar ve
+                yöresi, Selçuklu Veziri Sahip Ata Fahrettin Ali'nin "Sahip" unvanı nedeniyle "Karahisar-ı Sahip" olarak
+                anılmıştır. Karahisar-ı Sahip "Vezirin Karahisarı" anlamına gelmektedir. Kutalmışoğlu Süleyman Şah'ın
+                fethiyle ilk kez Türk egemenliğine giren topraklar, 1. Haçlı Seferi sırasındaki Hristiyan
+                egemenliğininden sonra Alaaddin Keykubat tarafından yeniden Türk yönetimine alındı. 12. yüzyılda
+                Germiyanoğullları'nın egemenliğinde olan bölge, sonra Osmanlı İmparatorluğu yönetimine girdi.</p>
+            <p>Sıcaklık: Afyonkarahisar ili içerisinde bulunan hava bilgisi istasyonlarının uzun yıllık verilerine göre
+                yıllık ortalama sıcaklık 11.1 °C dir. En soğuk ay olan Ocak ayında ortalama sıcaklık 0.2 °C dir. En
+                sıcak ay olan Temmuz ayında ise ortalama sıcaklık değeri 22.1 °C dir.</p>
+            <p>Ekonomi: Afyonun Temel sanayi ürünleri Mermer ve gıda üzerinedir. Mermer ve Traverten taşında Dünyanın
+                önde gelen Üreticilerindendir Afyon sanayisi.</p>
+            <p>Afyon hakkında Genel Bilgiler:Türkiyenin termal başkentidir; en fazla termal yatak kapasitesine sahip
+                ildir. Türkiyede kişi basina duşen beş yıldızlı otel sayısında en fazla tesise sahip ildir. En önemli
+                merkezleri: Gazlıgöl, Ömer, Gecek, Hüdai, Heybeli, Anemon, İkbal, Korel, Oruçogludur</p>
+            <p>Iscehisar ilçesinden dünyanın en kaliteli beyaz mermeri çıkmaktadır. Antik çağlarda birçok yerde
+                kullanılmıştır; örneğin Efes antik tiyatro. Günümüzde birçok yerli ve yabancı ünlünün evini
+                süslemektedir. Amerikadaki Beyaz Saraya'da döşenmiştir.</p>
+            <p>Haşhaş'ın anavatanıdır. Türkiyenin tek alkaloid(morfin)fabrikasi Bolvadin ilçesindedir.</p>
+            <p> Afyon sucuğu Kayseri sucuğundan lezzet bakımından daha farklıdır. Türkiye çapında 4-5 ulusal markası
+                vardır.Sucuk döneri Afyonkarahisar mutfağına özgü lezzetli sucuktan yapılan döner türüdür.</p>
+            <p>Afyonun lokumu her damak zevkine hitap eden tiplerde üretilir. Özellikle Kaymaklı lokumu son derece
+                popülerdir.</p>
+            <p>Afyon ev ekmeği patates ezmesi ilave edilen meşhur ev ekmeği, 1 haftalık dayanma süresi ile çok sevilen
+                ve besleme değeri normal ekmeklerden daha yüksek olan bir ekmek türüdür.</p>
+            <p>Türkiyenin yumurta borsasıdır, ayda 40.000.000 üretimi vardır</p>
+            <p>Türkiyenin et borsasıdır. İstanbul etinin %60 ını temin ediyordur.</p>
+            <p>Ekmek kadayıfı Afyon orijinli bir tatlı türü olup, tüm Türkiyede sevilerek yenen bir tatlı türüdür.
+                Özellikle Süt kaymağı ile beraber yenilmesi tercih edilmektedir. Ekmek kadayıfı çeşitleri ise vişneli,
+                cevizli, olmak üzere birçok çeşit içermektedir.</p>
+            <p>Kızılay Maden Suyu Ihsaniye ilçesinde çıkmaktadır. Dünyanin en iyi maden suyudur; defalarca uluslararasi
+                ödüller kazanmıştır (1934 Paris fuarı), tesis dünyanın en modern dolum tesisidir, dakikada 100.000 şişe
+                dolum yapılmaktadır. Sade ve meyveli olarak dünyanin dört bir yanına ihrac edilmektedir. Osmanlı
+                döneminde padişahlar Afyonkarahisardan Istanbula getirtirlermiş.</p>
+            <p>Nüfus:751.344</p>
+        </div>
+    </section>
+
+
+
+    <script>
+        let slideIndex = 0;
+
+        function goToSlide(index) {
+            slideIndex = index;
+            updateSlider();
+        }
+
+        function updateSlider() {
+            const sliderContent = document.querySelector('.slider-content');
+            const slides = document.querySelectorAll('.slide');
+            const slideWidth = slides[0].offsetWidth;
+
+            sliderContent.style.transform = `translateX(-${slideWidth * slideIndex}px)`;
+        }
+
+        function showSection(id) {
+            document.querySelectorAll('section').forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(id).style.display = 'block';
+            if (id === 'sehrim') {
+                document.querySelector('.slider-container').style.display = 'block';
+            } else {
+                document.querySelector('.slider-container').style.display = 'none';
+            }
+        }
+    </script>
+
+</body>

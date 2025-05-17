@@ -1,0 +1,205 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #ccc;
+    padding: 8px 0;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    margin: 0 5px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #ddd;
+}
+
+nav a.active {
+    color: #fff;
+}
+
+section {
+    padding: 20px;
+    display: none;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.slider-container {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    display: none;
+}
+
+.slider-content {
+    display: flex;
+    transition: transform 0.5s ease;
+    background-size: cover;
+}
+
+.slide {
+    flex: 0 0 100%;
+    background-size: 300px 300px;
+}
+
+img {
+    width: 1800px;
+    height: 600px;
+}
+
+.slide-nav {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+
+}
+
+.slide-nav button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 1px
+}
+
+.p1 {
+    font-family: sans-serif;
+    font-size: 20px;
+    color: rgba(41, 10, 114, 0.801);
+}
+
+.p2 {
+    font-family: sans-serif;
+    font-size: 20px;
+    color: rgba(41, 10, 114, 0.801);
+}
+
+.p3 {
+    font-family: sans-serif;
+    font-size: 20px;
+    color: rgba(41, 10, 114, 0.801);
+}
+
+.p4 {
+    font-family: sans-serif;
+    font-size: 20px;
+    color: rgba(41, 10, 114, 0.801);
+}
+
+.miras {
+    font-size: 50px;
+    font-family: sans-serif;
+}
+
+.parag1 {
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+.parag2 {
+    font-size: 35px;
+}
+
+.slider-content2, .slider-content-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide2, .slide-left {
+    text-align: center;
+}
+
+.slide-left img,
+.slide2 img {
+    width: 100%; 
+}
+
+.img-container {
+    position: relative;
+}
+
+.img-name {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.slider-container-left, .slider-container2 {
+    overflow: hidden;
+    display: flex;
+    width: 50%;
+    margin-right: 20px;
+    position: relative;
+}
+
+.slider-container-left::after, .slider-container2::after {
+    content: "↕"; 
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#sehrim {
+    background-color: #ADD8E6; 
+    padding: 20px; 
+}
+#mirasimiz {
+    background-color: #FFB6C1; 
+    padding: 20px; 
+}
+#egitim {
+    padding: 20px;
+}
+
+.slider-container {
+    width: 90%;
+    margin: 0 otomatik; 
+    overflow: hidden; 
+}
+
+.slider-content {
+    display: flex; 
+    transition: transform 0.5s kolayla; 
+}
+
+.slide {
+    flex: 0 0 100%; 
+}
+
+img {
+    width: 100%;
+}

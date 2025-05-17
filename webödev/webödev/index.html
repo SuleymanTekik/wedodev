@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="tr">
 <link rel="stylesheet" href="style.css">
@@ -10,18 +11,25 @@
 </head>
 
 <body>
-    
+    <section id="login">
+        <h2>Login</h2>
+        <form action="login.php" method="post">
+            <label for="username">Kullanıcı Adı:</label><br>
+            <input type="text" id="username" name="username" required><br><br>
+            <label for="password">Şifre:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+            <button type="submit">Giriş Yap</button>
+        </form>
+    </section>
     <header>
         <h1>Süleyman Tekik</h1>
     </header>
 
     <nav>
-        <div>
-            <a href="#hakkimda" onclick="showSection('hakkimda')">Hakkımda</a>
-            <a href="#egitim" onclick="showSection('egitim')">Eğitim Bilgileri</a>
-            <a href="#sehrim" onclick="showSection('sehrim')">Şehrim</a>
-            <a href="#mirasimiz" onclick="showSection('mirasimiz')">Mirasımız</a>
-        </div>
+        <a href="#hakkimda" onclick="showSection('hakkimda')">Hakkımda</a>
+        <a href="#egitim" onclick="showSection('egitim')">Eğitim Bilgileri</a>
+        <a href="#sehrim" onclick="showSection('sehrim')">Şehrim</a>
+        <a href="#mirasimiz" onclick="showSection('mirasimiz')">Mirasımız</a>
     </nav>
 
     <section id="hakkimda">
@@ -33,93 +41,31 @@
 
     <section id="egitim">
         <h2>Eğitim Bilgileri</h2>
-        <div class="slider-container">
-            <div class="slider-content">
-                <div class="slide">
-                    <img src="./resimler/i (11).webp" alt="Ayşegül Ersoy">
-                </div>
-                <div class="slide">
-                    <img src="./resimler/i (12).webp" alt="Mareşal Fevzi Çakmak">
-                </div>
-                <div class="slide">
-                    <img src="./resimler/i (13).webp" alt="Ali Çağlar">
-                </div>
-                <div class="slide">
-                    <img src="./resimler/i (14).webp" alt="Sakarya Üniversitesi">
-                </div>
-            </div>
-        </div>
-        <p>İlkokulu Ayşegül Ersoy İlköğretim okulunda okudum. Ortaokulda Maraşal Fevzi Çakmak Ortaokuluna geçiş
-            yaptım. Teog sınavından 480 puan alarak Ali Çağlar Anadolu Lisesi'ni kazandım. Yks sınavında 38134.
-            olarak Sakarya Üniversitesi bilgisayar mühendisliği bölümünü kazandım.</p>
+        <p>İlkokulu Ayşegül Ersoy İlköğretim okulunda okudum.Ortaokulda Maraşal Fevzi Çakmak Ortaokuluna geçiş
+            yaptım.Teog sınavından 480 puan alarak Ali Çağlar Anadolu Lisesi'ni kazandım.Yks sınavında 38134. olarak
+            Sakarya Üniversitesi bilgisayar mühendisliği bölümünü kazandım.</p>
     </section>
+    <div class="box">
+        <section id="mirasimiz">
 
-    <section id="mirasimiz">
-        <div style="display: flex; align-items: center;">
-            <img src="./resimler/afyon.jpg" alt="Afyon" style="max-width: 600px;">
-            <div style="margin-left: 20px;">
-                <p class="parag1">Afyonkarahisar, zengin tarihi ve kültürel mirasıyla ön plana çıkan bir şehirdir. Bu miras, binlerce yıllık geçmişi boyunca çeşitli medeniyetlerin izlerini taşır. Şehrin tarihi yapıları, yöresel kültürü ve eşsiz doğal güzellikleri, Afyonkarahisar'ı benzersiz kılar.</p>
-                <p class="parag2">Şehrimizin mirasını keşfetmek için tarihi kaleleri, müzeleri, anıtları ve doğal alanları ziyaret edebilirsiniz. Ayrıca yöresel lezzetleri tatmak ve geleneksel el sanatlarını görmek de mirasımızı deneyimlemenin bir yoludur.</p>
-            </div>
-        </div>
-        <div class="slider-container-left">
-            <div class="slider-content-left">
-                <div class="slide-left">
-                    <div class="img-container">
-                        <img src="./resimler/i (4).webp" alt="frig vadisi">
-                        <span class="img-name">Frig Vadisi</span>
-                    </div>
-                </div>
-                <div class="slide-left">
-                    <div class="img-container">
-                        <img src="./resimler/i (5).webp" alt="İmaret Camii">
-                        <span class="img-name">İmaret Camii</span>
-                    </div>
-                </div>
-                <div class="slide-left">
-                    <div class="img-container">
-                        <img src="./resimler/i (6).webp" alt="Afyon Kalesi">
-                        <span class="img-name">Afyon Kalesi</span>
-                    </div>
-                </div>
-                <div class="slide-left">
-                    <div class="img-container">
-                        <img src="./resimler/i (7).webp" alt="Arkeoloji Müzesi">
-                        <span class="img-name">Arkeoloji Müzesi</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="slider-container2">
-            <div class="slider-content2">
-                <div class="slide2">
-                    <div class="img-container">
-                        <img src="./resimler/i (1).webp" alt="Sucuk Döner">
-                        <span class="img-name">Sucuk Döner</span>
-                    </div>
-                </div>
-                <div class="slide2">
-                    <div class="img-container">
-                        <img src="./resimler/i (2).webp" alt="Keşkek">
-                        <span class="img-name">Keşkek</span>
-                    </div>
-                </div>
-                <div class="slide2">
-                    <div class="img-container">
-                        <img src="./resimler/i (3).webp" alt="Afyon Kebabı">
-                        <span class="img-name">Afyon Kebabı</span>
-                    </div>
-                </div>
-                <div class="slide2">
-                    <div class="img-container">
-                        <img src="./resimler/i.webp" alt="Bükme">
-                        <span class="img-name">Bükme</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
+            <h2 class="miras">Mirasımız</h2>
+            <p class="parag1">Afyonkarahisar, zengin tarihi ve kültürel mirasıyla ön plana çıkan bir şehirdir. Bu miras,
+                binlerce
+                yıllık geçmişi boyunca çeşitli medeniyetlerin izlerini taşır. Şehrin tarihi yapıları, yöresel kültürü ve
+                eşsiz doğal güzellikleri, Afyonkarahisar'ı benzersiz kılar.</p>
+            <p class="parag2">Şehrimizin mirasını keşfetmek için tarihi kaleleri, müzeleri, anıtları ve doğal alanları
+                ziyaret
+                edebilirsiniz. Ayrıca yöresel lezzetleri tatmak ve geleneksel el sanatlarını görmek de mirasımızı
+                deneyimlemenin bir
+                yoludur.</p>
+
+
+        </section>
+        <footer>
+            <p>&copy; 2024 Süleyman Tekik</p>
+        </footer>
+    </div>
+
     <section id="sehrim">
         <h2>Şehrim</h2>
         <div class="slider-container">
@@ -137,7 +83,7 @@
                 </div>
                 <div class="slide">
                     <a href="https://www.kulturportali.gov.tr/turkiye/afyonkarahisar/gezilecekyer/zafer--utku-aniti">
-                        <img src="./resimler/i (10).webp" alt="Zafer Anıtı">
+                        <img src="./resimler/20200213171812576_sayfa   49  IMG_4181.jpg" alt="Zafer Anıtı">
                     </a>
                 </div>
                 <div class="slide">
@@ -195,45 +141,14 @@
             <p>Kızılay Maden Suyu Ihsaniye ilçesinde çıkmaktadır. Dünyanin en iyi maden suyudur; defalarca uluslararasi
                 ödüller kazanmıştır (1934 Paris fuarı), tesis dünyanın en modern dolum tesisidir, dakikada 100.000 şişe
                 dolum yapılmaktadır. Sade ve meyveli olarak dünyanin dört bir yanına ihrac edilmektedir. Osmanlı
-                döneminde padişahlar Afyonkarahisardan İstanbula getirtirlermiş.</p>
-
+                döneminde padişahlar Afyonkarahisardan Istanbula getirtirlermiş.</p>
+            <p>Nüfus:751.344</p>
         </div>
     </section>
-    <footer>
-        <p>&copy; 2024 Süleyman Tekik</p>
-    </footer>
+
+
 
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-    const slides1 = document.querySelectorAll('.slide-left');
-    const slides2 = document.querySelectorAll('.slide2');
-    let slideIndex1 = 0;
-    let slideIndex2 = 0;
-
-    function goToNextSlide() {
-        slides1.forEach(slide => {
-            slide.style.display = 'none';
-        });
-
-        slides2.forEach(slide => {
-            slide.style.display = 'none';
-        });
-
-        slideIndex1 = (slideIndex1 + 1) % slides1.length;
-        slideIndex2 = (slideIndex2 + 1) % slides2.length;
-
-        slides1[slideIndex1].style.display = 'block';
-        slides2[slideIndex2].style.display = 'block';
-    }
-
-    setInterval(goToNextSlide, 5000);
-
-    slides1[slideIndex1].style.display = 'block';
-    slides2[slideIndex2].style.display = 'block';
-});
-
-
-
         let slideIndex = 0;
 
         function goToSlide(index) {
